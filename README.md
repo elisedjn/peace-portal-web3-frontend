@@ -10,4 +10,7 @@ Using the two in conjunction is one of the fastest ways to build a web app.
 - Hit run
 - Edit [App.jsx](#src/App.jsx) and watch it live update!
 
+### Replit deployed link
+https://waveportal-starter-project.koaladjn.repl.co/
+
 By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the `.replit` file.
