@@ -1,0 +1,276 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px 0px;
+  background-image: url('background.png'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: gray;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.scrollingPart {
+  height: calc( 100vh - 185px);
+  overflow: scroll;
+}
+
+.messageSpace{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.messageSpace > input {
+  width: calc(100% - 20px);
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px 5px 0px 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+
+.messageSpace > input:focus{
+  outline: none;
+}
+
+.messageSpace > label {
+  color: gray
+}
+
+.error {
+  color: #d954af;
+  font-style: oblique;
+  margin-top: 0px;
+}
+
+
+.waveButton, .loadingButton {
+  cursor: pointer;
+  margin-bottom: 24px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #95e6d0;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100%;
+}
+
+.waveButton:hover {
+  background-color: #73b0a0;
+}
+
+.connectButton{
+   background-color: #f5bde3;
+}
+
+.connectButton:hover{
+  background-color: #c08caf;
+}
+
+.thankYou {
+  text-align: center;
+  color: gray;
+  font-size: 24px;
+}
+
+.thankYou > span {
+  font-size: 16px;
+}
+
+.counter {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 18px;
+  color: gray;
+}
+
+.counter > span {
+  color: #d954af;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.flowers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flowers > div {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.loadingButton{
+  cursor: wait;
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  background-color: #c8eee4;
+}
+
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  transform-origin: 20px 20px;
+  margin: 0px 12px;
+}
+
+.lds-heart div {
+  top: 16px;
+  left: 16px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #f5bde3;
+  animation: lds-heart 2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #f5bde3;
+}
+
+.lds-heart div:before {
+  left: -12px;
+  border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+  top: -12px;
+  border-radius: 50% 50% 0 0;
+}
+
+.youWin{
+  color: gray;
+  text-align: center;
+}
+
+.youWin > h5 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #d954af;
+}
+
+.youWin > .winAmount {
+  color: #d954af;
+  font-weight: bold;
+}
+
+.youWin > .quote {
+  font-style: oblique;
+  margin: 5px 0px 10px 0px;
+  display: block;
+}
+
+.allMessages{
+  margin-top: 24px;
+  border: 2px solid #f5bde3;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.allMessages > h3 {
+  margin: 0px;
+  width: calc(100% - 24px);
+  padding: 12px;
+  background-color: #f5bde3;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.peaceMessage {
+  padding: 12px;
+  border-bottom: 2px solid #f5bde3;
+  font-style: italic;
+}
+
+.peaceMessage:last-child {
+  border: none;
+}
+
+.peaceMessage > .sender  {
+  color: gray;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.peaceMessage > .sender > .linkToSender {
+  font-weight: bold;
+  text-decoration: none;
+  color: gray;
+}
+
+.peaceMessage > .time {
+  color: gray;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.peaceMessage > .message {
+  font-size: 22px;
+}
+
+/* Animations */
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
